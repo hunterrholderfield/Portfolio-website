@@ -19,7 +19,7 @@ export function About() {
             <Stat label="Based in" value={site.location} />
             <Stat label="Role" value="Automation Engineer" />
             <Stat label="Building with" value="MCP / LLMs / Stackon Space" />
-            <Stat label="Shipping" value="Personal projects" />
+            <Stat label="Shipping" value="Solutions" />
           </div>
 
           <div className="mt-8">
