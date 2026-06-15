@@ -54,7 +54,7 @@ export function SectionHeading({
 
 export function Tag({ children }: { children: ReactNode }) {
   return (
-    <span className="rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted">
+    <span className="rounded-full bg-foreground px-3 py-1 text-xs text-background">
       {children}
     </span>
   );

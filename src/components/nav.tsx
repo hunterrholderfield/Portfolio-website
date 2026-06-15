@@ -63,7 +63,7 @@ export function Nav() {
           ))}
           <a
             href={site.socials.email}
-            className="ml-2 rounded-md border border-border-strong bg-surface px-3.5 py-2 text-sm font-medium text-foreground transition-colors hover:border-accent/60 hover:text-accent"
+            className="ml-2 rounded-md bg-foreground px-3.5 py-2 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
           >
             Get in touch
           </a>
@@ -101,7 +101,7 @@ export function Nav() {
             <a
               href={site.socials.email}
               onClick={() => setOpen(false)}
-              className="mt-1 rounded-md border border-border-strong bg-surface px-3 py-3 text-center text-base font-medium text-foreground"
+              className="mt-1 rounded-md bg-foreground px-3 py-3 text-center text-base font-medium text-background"
             >
               Get in touch
             </a>

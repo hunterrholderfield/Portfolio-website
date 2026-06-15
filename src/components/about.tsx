@@ -36,7 +36,7 @@ export function About() {
                     {group.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-md border border-border bg-surface/60 px-2.5 py-1 text-xs text-muted"
+                        className="rounded-md bg-foreground px-2.5 py-1 text-xs text-background"
                       >
                         {skill}
                       </span>

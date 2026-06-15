@@ -15,7 +15,7 @@ export function Contact() {
           className="pointer-events-none absolute inset-0 opacity-60"
           style={{
             background:
-              "radial-gradient(40rem 20rem at 50% -20%, rgba(129,140,248,0.18), transparent 70%)",
+              "radial-gradient(40rem 20rem at 50% -20%, rgba(0,0,0,0.05), transparent 70%)",
           }}
           aria-hidden
         />
@@ -43,7 +43,7 @@ export function Contact() {
               href={site.socials.github}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-lg border border-border-strong bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/60 hover:text-accent"
+              className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
             >
               <GitHubIcon className="h-4 w-4" />
               GitHub
@@ -53,7 +53,7 @@ export function Contact() {
               href={site.socials.linkedin}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-lg border border-border-strong bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/60 hover:text-accent"
+              className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
             >
               <LinkedInIcon className="h-4 w-4" />
               LinkedIn

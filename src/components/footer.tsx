@@ -24,7 +24,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub"
-            className="rounded-md border border-border p-2.5 text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
           >
             <GitHubIcon className="h-5 w-5" />
           </a>
@@ -33,14 +33,14 @@ export function Footer() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn"
-            className="rounded-md border border-border p-2.5 text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
           >
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a
             href={site.socials.email}
             aria-label="Email"
-            className="rounded-md border border-border p-2.5 text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
           >
             <MailIcon className="h-5 w-5" />
           </a>

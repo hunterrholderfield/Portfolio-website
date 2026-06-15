@@ -121,7 +121,7 @@ export default async function ProjectPage({
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full border border-border bg-surface px-3 py-1 text-xs text-muted"
+                  className="rounded-full bg-foreground px-3 py-1 text-xs text-background"
                 >
                   {tag}
                 </span>
@@ -131,7 +131,7 @@ export default async function ProjectPage({
               href={project.url}
               target="_blank"
               rel="noreferrer noopener"
-              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-border-strong px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent/60 hover:text-accent"
+              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-foreground px-4 py-2.5 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
             >
               Visit {hostname(project.url)}
               <ArrowUpRightIcon className="h-4 w-4" />
@@ -148,15 +148,8 @@ function StatusBadge({
 }: {
   status: "Live" | "In progress" | "Archived";
 }) {
-  const styles: Record<typeof status, string> = {
-    Live: "border-emerald-400/30 bg-emerald-400/10 text-emerald-300",
-    "In progress": "border-amber-400/30 bg-amber-400/10 text-amber-300",
-    Archived: "border-border bg-surface text-faint",
-  };
   return (
-    <span
-      className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${styles[status]}`}
-    >
+    <span className="rounded-full bg-foreground px-2.5 py-0.5 text-[11px] font-medium text-background">
       {status}
     </span>
   );

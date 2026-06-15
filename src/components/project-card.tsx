@@ -30,7 +30,7 @@ export function ProjectCard({ project }: { project: Project }) {
               className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
             />
           ) : (
-            <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(60%_60%_at_50%_30%,rgba(129,140,248,0.25),transparent)]">
+            <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(60%_60%_at_50%_30%,rgba(0,0,0,0.06),transparent)]">
               <span className="text-gradient font-mono text-2xl font-semibold">
                 {project.name}
               </span>
@@ -56,7 +56,7 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-border px-2.5 py-0.5 text-[11px] text-faint"
+              className="rounded-full bg-foreground px-2.5 py-0.5 text-[11px] text-background"
             >
               {tag}
             </span>
@@ -76,15 +76,8 @@ export function ProjectCard({ project }: { project: Project }) {
 }
 
 function StatusBadge({ status }: { status: Project["status"] }) {
-  const styles: Record<Project["status"], string> = {
-    Live: "border-emerald-400/30 bg-emerald-400/10 text-emerald-300",
-    "In progress": "border-amber-400/30 bg-amber-400/10 text-amber-300",
-    Archived: "border-border bg-surface text-faint",
-  };
   return (
-    <span
-      className={`shrink-0 rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${styles[status]}`}
-    >
+    <span className="shrink-0 rounded-full bg-foreground px-2.5 py-0.5 text-[11px] font-medium text-background">
       {status}
     </span>
   );

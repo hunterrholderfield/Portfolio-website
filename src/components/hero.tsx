@@ -46,7 +46,7 @@ export function Hero() {
           </Link>
           <a
             href={site.resumeUrl}
-            className="inline-flex items-center gap-2 rounded-lg border border-border-strong bg-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent/60 hover:text-accent"
+            className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
           >
             <DownloadIcon className="h-4 w-4" />
             Résumé
@@ -59,7 +59,7 @@ export function Hero() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub"
-            className="rounded-md border border-border p-2.5 text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
           >
             <GitHubIcon className="h-5 w-5" />
           </a>
@@ -68,14 +68,14 @@ export function Hero() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn"
-            className="rounded-md border border-border p-2.5 text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
           >
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a
             href={site.socials.email}
             aria-label="Email"
-            className="rounded-md border border-border p-2.5 text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
           >
             <MailIcon className="h-5 w-5" />
           </a>
