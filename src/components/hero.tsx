@@ -25,15 +25,7 @@ export function Hero() {
     <section className="relative mx-auto flex max-w-6xl flex-col gap-14 px-5 pb-12 pt-32 sm:px-8 sm:pt-40 lg:flex-row lg:items-center lg:gap-10">
       {/* Left: intro */}
       <div className="rise flex-1">
-        <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-          </span>
-          Based in {site.location}
-        </span>
-
-        <h1 className="mt-6 text-4xl font-semibold tracking-tight text-foreground sm:text-6xl">
+        <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-6xl">
           {site.name}
         </h1>
         <p className="text-gradient mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
