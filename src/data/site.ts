@@ -26,7 +26,7 @@ export const site = {
   // Social / contact links. Replace the placeholder handles with your real ones.
   socials: {
     email: "mailto:hunterrholderfield@gmail.com",
-    github: "https://github.com/hunterholderfield", // TODO: update to your real GitHub
+    github: "https://github.com/hunterrholderfield",
     linkedin: "https://www.linkedin.com/in/hunterholderfield", // TODO: update to your real LinkedIn
   },
 } as const;
