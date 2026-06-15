@@ -51,7 +51,7 @@ export function Hero() {
             className={btn}
           >
             <DownloadIcon className="h-4 w-4" />
-            Résumé
+            Resume
           </a>
         </div>
 
