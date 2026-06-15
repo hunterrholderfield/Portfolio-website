@@ -27,7 +27,7 @@ export const site = {
   socials: {
     email: "mailto:hunterrholderfield@gmail.com",
     github: "https://github.com/hunterrholderfield",
-    linkedin: "https://www.linkedin.com/in/hunterholderfield", // TODO: update to your real LinkedIn
+    linkedin: "https://www.linkedin.com/in/hunter-holderfield-11081b1a7/",
   },
 } as const;
 
