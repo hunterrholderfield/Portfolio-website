@@ -13,7 +13,7 @@ export function ProjectsSection() {
         <SectionHeading
           eyebrow="Projects"
           title="Things I've built"
-          description="A growing collection of products and experiments. Each one embeds the live project right here on the site."
+          description="A growing collection of solutions and my ideas that are live to the community. Each of the solutions below can be accessed without leaving the page — as they're embedded."
         />
         {projects.length > showcased.length && (
           <Link

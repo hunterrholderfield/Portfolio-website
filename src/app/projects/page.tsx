@@ -19,8 +19,9 @@ export default function ProjectsPage() {
           Everything I&apos;ve been building
         </h1>
         <p className="mt-4 text-base leading-relaxed text-muted">
-          A collection of products and experiments. Open any project to explore
-          it live, embedded right here on the site.
+          A growing collection of solutions and my ideas that are live to the
+          community. Each of the solutions below can be accessed without leaving
+          the page — as they&apos;re embedded.
         </p>
       </div>
 
