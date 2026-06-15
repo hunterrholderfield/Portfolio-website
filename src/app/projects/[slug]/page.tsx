@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getProject, projects } from "@/data/projects";
 import { ProjectEmbed } from "@/components/project-embed";
 import { ArrowLeftIcon, ArrowUpRightIcon } from "@/components/icons";
+import { StatusBadge } from "@/components/ui";
 
 type Params = { slug: string };
 
@@ -143,17 +144,6 @@ export default async function ProjectPage({
   );
 }
 
-function StatusBadge({
-  status,
-}: {
-  status: "Live" | "In progress" | "Archived";
-}) {
-  return (
-    <span className="rounded-full bg-foreground px-2.5 py-0.5 text-[11px] font-medium text-background">
-      {status}
-    </span>
-  );
-}
 
 function hostname(url: string): string {
   try {

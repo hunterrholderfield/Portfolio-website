@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/data/site";
 import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
+import { iconBtn } from "@/components/ui";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -24,7 +25,7 @@ export function Footer() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub"
-            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
+            className={iconBtn}
           >
             <GitHubIcon className="h-5 w-5" />
           </a>
@@ -33,14 +34,14 @@ export function Footer() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn"
-            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
+            className={iconBtn}
           >
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a
             href={site.socials.email}
             aria-label="Email"
-            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
+            className={iconBtn}
           >
             <MailIcon className="h-5 w-5" />
           </a>

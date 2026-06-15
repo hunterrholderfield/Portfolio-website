@@ -1,4 +1,14 @@
 import type { ReactNode } from "react";
+import type { Project } from "@/data/projects";
+
+/** Shared filled-black button style (rounded-lg). Compose with orthogonal
+ *  utilities at the call site, e.g. `${btn} group`. */
+export const btn =
+  "inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5";
+
+/** Shared filled-black icon button (square). */
+export const iconBtn =
+  "rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5";
 
 export function Section({
   id,
@@ -56,6 +66,22 @@ export function Tag({ children }: { children: ReactNode }) {
   return (
     <span className="rounded-full bg-foreground px-3 py-1 text-xs text-background">
       {children}
+    </span>
+  );
+}
+
+export function StatusBadge({
+  status,
+  className = "",
+}: {
+  status: Project["status"];
+  className?: string;
+}) {
+  return (
+    <span
+      className={`rounded-full bg-foreground px-2.5 py-0.5 text-[11px] font-medium text-background ${className}`}
+    >
+      {status}
     </span>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type SVGProps } from "react";
 import { ArrowUpRightIcon, ExternalIcon } from "@/components/icons";
+import { btn } from "@/components/ui";
 
 type Status = "loading" | "loaded" | "blocked";
 
@@ -145,7 +146,7 @@ function Fallback({
           href={url}
           target="_blank"
           rel="noreferrer noopener"
-          className="group inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+          className={`${btn} group`}
         >
           Open {name}
           <ArrowUpRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

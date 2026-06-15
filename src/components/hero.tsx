@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { btn, iconBtn } from "@/components/ui";
 import { site } from "@/data/site";
 import { featuredProjects } from "@/data/projects";
 import {
@@ -39,14 +40,14 @@ export function Hero() {
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Link
             href="/projects"
-            className="group inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+            className={`${btn} group`}
           >
             View projects
             <ArrowUpRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
           <a
             href={site.resumeUrl}
-            className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+            className={btn}
           >
             <DownloadIcon className="h-4 w-4" />
             Résumé
@@ -59,7 +60,7 @@ export function Hero() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub"
-            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
+            className={iconBtn}
           >
             <GitHubIcon className="h-5 w-5" />
           </a>
@@ -68,14 +69,14 @@ export function Hero() {
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn"
-            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
+            className={iconBtn}
           >
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a
             href={site.socials.email}
             aria-label="Email"
-            className="rounded-md bg-foreground p-2.5 text-background transition-transform hover:-translate-y-0.5"
+            className={iconBtn}
           >
             <MailIcon className="h-5 w-5" />
           </a>

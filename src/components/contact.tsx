@@ -1,5 +1,5 @@
 import { site } from "@/data/site";
-import { Section, Eyebrow } from "@/components/ui";
+import { Section, Eyebrow, btn } from "@/components/ui";
 import {
   ArrowUpRightIcon,
   GitHubIcon,
@@ -34,7 +34,7 @@ export function Contact() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
               href={site.socials.email}
-              className="group inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+              className={`${btn} group`}
             >
               <MailIcon className="h-4 w-4" />
               {site.email}
@@ -43,7 +43,7 @@ export function Contact() {
               href={site.socials.github}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+              className={btn}
             >
               <GitHubIcon className="h-4 w-4" />
               GitHub
@@ -53,7 +53,7 @@ export function Contact() {
               href={site.socials.linkedin}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+              className={btn}
             >
               <LinkedInIcon className="h-4 w-4" />
               LinkedIn

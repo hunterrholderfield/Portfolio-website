@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Project } from "@/data/projects";
 import { ArrowUpRightIcon } from "@/components/icons";
+import { StatusBadge } from "@/components/ui";
 
 export function ProjectCard({ project }: { project: Project }) {
   const host = hostname(project.url);
@@ -46,7 +47,7 @@ export function ProjectCard({ project }: { project: Project }) {
           <h3 className="text-lg font-semibold text-foreground">
             {project.name}
           </h3>
-          <StatusBadge status={project.status} />
+          <StatusBadge status={project.status} className="shrink-0" />
         </div>
         <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">
           {project.tagline}
@@ -75,13 +76,6 @@ export function ProjectCard({ project }: { project: Project }) {
   );
 }
 
-function StatusBadge({ status }: { status: Project["status"] }) {
-  return (
-    <span className="shrink-0 rounded-full bg-foreground px-2.5 py-0.5 text-[11px] font-medium text-background">
-      {status}
-    </span>
-  );
-}
 
 function hostname(url: string): string {
   try {

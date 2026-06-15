@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLeftIcon } from "@/components/icons";
+import { btn } from "@/components/ui";
 
 export default function NotFound() {
   return (
@@ -13,7 +14,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="mt-8 inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+        className={`${btn} mt-8`}
       >
         <ArrowLeftIcon className="h-4 w-4" />
         Back home
