@@ -15,7 +15,7 @@ export function Footer() {
             <span className="text-faint">.me</span>
           </Link>
           <p className="mt-2 text-sm text-faint">
-            © {year} {site.name}. {site.location}.
+            © {year} {site.name}.
           </p>
         </div>
 
