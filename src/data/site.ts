@@ -14,13 +14,13 @@ export const site = {
 
   // Short hero subtitle.
   tagline:
-    "I design and ship AI systems and automation that take the busywork out of engineering.",
+    "I design and deliver AI and automation solutions and provide you with a return-on-investment for a tedious, time-consuming manual process.",
 
   // Longer "about" copy.
   about: [
-    "I'm an AI & Automation Engineer based in Overland Park, KS. By day I build automation that keeps production systems running and removes the manual, repetitive work that slows teams down.",
-    "Outside of my full-time role, I build with large language models and agentic tooling — turning ideas into shipped products. This site is where I collect those projects.",
-    "I care about systems that are observable, reliable, and genuinely useful. If it can be measured, monitored, and automated, I'm interested.",
+    "I'm an AI & Automation Engineer based in Overland Park, KS. During the day, I help businesses identify the processes they're performing manually today, to provide them with a return-on-investment and implement the automation. I strive to reduce the manual, repetitive work that's slowing you and your business down.",
+    "Outside of my full-time career, I build with large language models and agentic tooling — turning my ideas into shipped products for the community. This site is where I collect the ideas and projects I've developed.",
+    "I care about systems that are observable, reliable, and genuinely useful. If it can be measured, monitored, and there's a process — I'm interested!",
   ],
 
   // Social / contact links. Replace the placeholder handles with your real ones.
@@ -63,8 +63,9 @@ export const skillGroups: SkillGroup[] = [
       "Python",
       "TypeScript / JavaScript",
       "Next.js & React",
-      "APIs & microservices",
+      "APIs",
       "Cloud (Vercel / AWS)",
+      "Supabase (SQL)",
     ],
   },
 ];
