@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { btn, iconBtn } from "@/components/ui";
+import { WizardLogo } from "@/components/wizard-logo";
 import { site } from "@/data/site";
 import { featuredProjects } from "@/data/projects";
 import {
@@ -13,8 +14,8 @@ import {
 const statusRows: [string, string][] = [
   ["role", site.role],
   ["location", site.location],
-  ["status", "Open to interesting problems"],
-  ["focus", "LLMs · agents · automation"],
+  ["status", "Debugging the real world"],
+  ["focus", "LLMs · AI · Agents · Automation"],
   [
     "latest",
     featuredProjects[0] ? featuredProjects[0].name : "Personal projects",
@@ -91,8 +92,9 @@ export function Hero() {
             <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
             <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
             <span className="ml-2 font-mono text-xs text-faint">
-              {site.wordmark}@portfolio: ~
+              hunterholderfield@portfolio: ~
             </span>
+            <WizardLogo className="ml-auto" />
           </div>
           <div className="space-y-2.5 p-5 font-mono text-sm">
             <p className="text-faint">

@@ -97,3 +97,54 @@ body {
     animation: none;
   }
 }
+
+/* ---- Wizard logo ------------------------------------------------------ */
+.wiz-lean {
+  transition: transform 0.25s ease-out;
+  transform: translate(var(--cb-tx, 0px), var(--cb-ty, 0px));
+}
+.wiz-float {
+  animation: wiz-float 3s ease-in-out infinite;
+}
+.wiz-eyes {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wiz-blink 4.6s infinite;
+}
+.wiz-star {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wiz-twinkle 2.6s ease-in-out infinite;
+}
+.wiz-hop {
+  animation: wiz-hop 0.6s ease;
+}
+
+@keyframes wiz-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+@keyframes wiz-blink {
+  0%, 93%, 100% { transform: scaleY(1); }
+  96% { transform: scaleY(0.1); }
+}
+@keyframes wiz-twinkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(0.55) rotate(45deg); opacity: 0.55; }
+}
+@keyframes wiz-hop {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  30% { transform: translateY(-6px) rotate(-4deg); }
+  60% { transform: translateY(0) rotate(2deg); }
+  80% { transform: translateY(-2px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wiz-lean { transform: none; transition: none; }
+  .wiz-float,
+  .wiz-eyes,
+  .wiz-star,
+  .wiz-hop {
+    animation: none;
+  }
+}

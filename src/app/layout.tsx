@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Hunter Holderfield",
     "AI Engineer",
     "Automation Engineer",
-    "Kansas City",
+    "Overland Park",
     "LLM",
     "agentic workflows",
     "Stackon",
