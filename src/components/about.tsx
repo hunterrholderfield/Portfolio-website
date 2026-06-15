@@ -18,7 +18,7 @@ export function About() {
           <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
             <Stat label="Based in" value={site.location} />
             <Stat label="Role" value="Automation Engineer" />
-            <Stat label="Building with" value="LLMs & agents" />
+            <Stat label="Building with" value="MCP / LLMs / Stackon Space" />
             <Stat label="Shipping" value="Personal projects" />
           </div>
 
