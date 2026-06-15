@@ -27,8 +27,9 @@ export function Contact() {
             Let&apos;s build something
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            Have an idea, a role, or a problem worth automating? I&apos;m always
-            happy to talk shop. The fastest way to reach me is email.
+            Have an idea, a process, or a problem worth solving? I&apos;m always
+            happy to talk through those next steps. The fastest way to reach me
+            is email.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
